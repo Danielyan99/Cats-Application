@@ -1,0 +1,30 @@
+.categories-item {
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 2rem 0;
+    height: 40px;
+    border-radius: 2rem;
+    background: #009688;
+    display: flex;
+    align-items: center;
+    padding-left: 0.7rem;
+    cursor: pointer;
+    transition: all .3s linear;
+    &:first-of-type {
+        margin: 0;
+    }
+    &:hover {
+        margin-left: 1rem;
+    }
+    &.active {
+        background-color: #03bcf4;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .categories-item  {
+        margin: 1rem 0;
+    }
+}
