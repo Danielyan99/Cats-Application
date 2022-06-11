@@ -6,16 +6,16 @@ import Category from './Category';
 import BurgerMenu from './BurgerMenu';
 
 const Sidebar = ({loadCount, setLoadCount}) => {
-    const [currentId, setCurrentId] = useState("")
-    const categories = useSelector(state => state.categories)
-    const dispatch = useDispatch()
+    const [currentId, setCurrentId] = useState("");
+    const categories = useSelector(state => state.categories);
+    const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(fetchCategories())
+        dispatch(fetchCategories());
     }, [])
 
     useEffect(() => {
-        dispatch(fetchCats(currentId, loadCount))
+        dispatch(fetchCats(currentId, loadCount));
     }, [currentId, loadCount])
 
     return (

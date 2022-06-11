@@ -1,5 +1,4 @@
 const BurgerMenu = () => {
-
     return (
         <div>
             <div className="burger-menu">
